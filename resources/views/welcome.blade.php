@@ -29,6 +29,12 @@
                 min-height: 75rem;
                 padding-top: 4.5rem;
             }
+            #container {
+              min-width: 310px;
+              max-width: 800px;
+              height: 400px;
+              margin: 0 auto
+            }
         </style>
   </head>
 
@@ -80,6 +86,7 @@
           <button style="margin-left: 20px;" type="submit" class="btn btn-success mb-2"><i class="fas fa-chart-line"></i>Generate Report</button>
         </form>
       </div>
+      <div id="container" style="width:100%; height:400px;"></div>
     </main>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -91,13 +98,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
-    <script>
-        $(document).ready(function(){
-            var fdate_input=$('input[name="fdate"]'); //our first date input has the name "fdate"
-            var ldate_input=$('input[name="ldate"]'); //our first date input has the name "fdate"
-            
-        })
-    </script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/lineChart.js"></script>
     
   </body>
 </html>
